@@ -1,0 +1,102 @@
+@import 'set-styles';
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+    margin: 0 auto;
+}
+.heading {
+    border-bottom: $bottom-border;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+#main-nav {
+    width: 100%;
+    background-color: $main-bg;
+
+    ul.nav-bar {
+        color: $white;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        -webkit-padding-start: 0;
+
+        li {
+            flex: 1;
+            text-align: center;
+            &:hover {
+                list-style-type: none;
+                cursor: pointer; 
+                color: $link-hover;
+            }
+            i:hover {
+                color: $link-hover;
+            }
+            &.wide-form {
+                margin-left: auto;
+                margin-right: auto;
+
+                form{
+                    input{
+                        @include border-radius(5px);
+                        height: 30px;
+                        padding-left: 15px;
+                        margin-top: 10px;
+                        border-style: none;
+                    }
+                }
+
+            }
+        }
+    }
+}
+.btn-1 {
+    background-color: $button-bg;
+    color: $white;
+    padding: $btn-pad;
+    transition: $transition-fast;
+    border: none;
+    @include border-radius(10px);
+}
+.btn-1:hover {
+    cursor: pointer;
+    background-color: $button-bg-hover;
+    color: #000;
+}
+#big-form {
+    width: 100%;
+
+    form {
+        .flexer{
+            display: flex;
+
+            input {
+                flex: 1;
+                @include border-radius(0px);
+                box-shadow: none;
+                height: 50px;
+                padding: 15px;
+                margin: 10px;
+                font-size: 14px;
+            }
+            textarea {
+                flex: 1;
+                height: 100px;
+                margin: 10px 0px;
+                padding: 15px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+.no-left-margin {
+    margin-left: 0 !important;
+}
+.no-right-margin {
+    margin-right: 0 !important;
+}

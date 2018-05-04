@@ -1,0 +1,19 @@
+$font-stack: Helvectica, sans-serif;
+$primary-color: #333;
+$bottom-border: 1px solid red;
+$main-bg: #24babf;
+$white: #fff;
+$bg-hover: #000;
+$button-bg: teal;
+$button-bg-hover: lightblue;
+$btn-pad: 10px 50px 10px 50px;
+$transition-slow: all 0.5s ease-in-out;
+$transition-fast: all 0.2s ease-in-out;
+$link-hover: #ccc;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
